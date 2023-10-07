@@ -1,27 +1,61 @@
 # Front
+# CRUD em Angular com Autenticação usando Cognito AWS
+Este é um projeto de exemplo que demonstra como criar um aplicativo de CRUD em Angular com autenticação usando o serviço AWS Cognito no backend.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
+Pré-requisitos
+Antes de começar, você precisa ter os seguintes pré-requisitos instalados e configurados:
 
-## Development server
+Node.js: Instalação do Node.js
+Angular CLI: Instale-o globalmente usando o comando npm install -g @angular/cli
+AWS CLI: Instalação da AWS CLI
+AWS Account: Crie uma conta AWS e configure suas credenciais
+Configuração do Backend (Java com AWS Cognito)
+Clone este repositório:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+bash
+Copy code
+git clone https://github.com/seu-usuario/seu-repo-backend.git
+Acesse o diretório do projeto backend:
 
-## Code scaffolding
+bash
+Copy code
+cd seu-repo-backend
+Configure seu projeto Java para interagir com o Amazon Cognito. Certifique-se de definir as informações apropriadas, como a região da AWS, seu Pool de Usuários Cognito, etc.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Compile e execute o projeto backend.
 
-## Build
+Configuração do Frontend (Angular)
+Clone este repositório:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+bash
+Copy code
+git clone https://github.com/seu-usuario/seu-repo-frontend.git
+Acesse o diretório do projeto frontend:
 
-## Running unit tests
+bash
+Copy code
+cd seu-repo-frontend
+Configure as variáveis de ambiente necessárias no arquivo src/environments/environment.ts. Por exemplo:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+typescript
+Copy code
+export const environment = {
+  production: false,
+  awsConfig: {
+    cognito: {
+      userPoolId: 'SEU_USER_POOL_ID',
+      clientId: 'SEU_CLIENT_ID',
+    },
+  },
+};
+Instale as dependências do projeto:
 
-## Running end-to-end tests
+bash
+Copy code
+npm install
+Inicie o servidor de desenvolvimento:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+bash
+Copy code
+ng serve
+Acesse o aplicativo em seu navegador em http://localhost:4200.
