@@ -1,1 +1,32 @@
+<div class="container">
+  <div class="container-form">
+  <form [formGroup]="loginForm" (ngSubmit)="printarTela()">
+    <div class="form-usuario">
+      <label for="usuario">Usuario</label>
+      <input formControlName="usuario" type="text" id="usuario" placeholder="Usuario" required>
+    </div>
+    <div class="form-senha">
+      <label for="senha">Senha</label>
+      <input formControlName="senha" type="password" id="senha" placeholder="Senha" required>
+    </div>
+
+    <div class="form-email">
+      <label for="email">Email</label>
+      <input formControlName="email" type="email" id="email" placeholder="Email" required>
+
+    </div>
+    <div class="button-confirmar">
+      <button class="button-entrar" type="submit">Entrar</button>
+    </div>
+     <div>
+      <span class="login">
+        Ja Possui Login? <a routerLink="#"></a>
+      </span>
+     </div>
+  </form>
+</div>
+</div>
+<div class="image"></div>
+
+
 
