@@ -1,0 +1,74 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(204,189,244);
+  background: linear-gradient(104deg, rgba(204,189,244,0.7847732843137255) 4%, rgba(117,147,149,1) 91%);
+
+
+}
+
+.container-form{
+  display: flex;
+  color: black;
+  padding: 7em;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #ccc;
+  background: rgb(204,189,244);
+  background: linear-gradient(104deg, rgba(204,189,244,0.7847732843137255) 4%, rgba(117,147,149,1) 91%);
+  border-radius: 10%;
+  box-shadow: 2px 2px 20px rgba(56, 56, 56, 0.602);
+
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #fff;
+  width: 250px;
+}
+
+.form-group input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+}
+
+.button-confirmar {
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.button-entrar {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-entrar:hover {
+  background-color: #0056b3;
+}
+
+
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+  color: #fff
+}

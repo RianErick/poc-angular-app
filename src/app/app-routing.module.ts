@@ -3,9 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
 
-  {path : "" , redirectTo:"signup" , pathMatch:"full"},
-  {path: "signup", loadChildren: () => import("./pages/login/login.module")
-                                      .then((router) => router.LoginModule)}
+  {path : '' , redirectTo:"signin" , pathMatch:"full"},
+
+  {path: '', loadChildren: () => import("./pages/login/login.module")
+                                      .then((router) => router.LoginModule)},
+
+  {path: 'home', loadChildren: () => import("./pages/home/home.module")
+                                      .then((router) => router.HomeModule)}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
