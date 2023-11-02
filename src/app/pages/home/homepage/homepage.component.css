@@ -13,6 +13,7 @@ table {
 }
 .toobar{
   color: #000000;
+  gap:10px;
 }
 
 .card{
@@ -20,3 +21,12 @@ table {
   width: 100vw;
 }
 
+.title{
+  padding: 20px;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}

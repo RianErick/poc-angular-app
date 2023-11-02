@@ -1,0 +1,48 @@
+/* Estilo para o container */
+.container {
+  max-width: 500px; /* Define a largura máxima do container */
+  margin: 0 auto;  /* Centraliza horizontalmente o container na página */
+  padding: 20px;   /* Adiciona espaçamento interno para o conteúdo */
+}
+
+/* Estilo para os campos de entrada */
+mat-form-field {
+  width: 100%;  /* Define a largura máxima para preencher o container */
+  margin-bottom: 20px; /* Adiciona espaçamento inferior entre os campos */
+}
+
+/* Estilo para as etiquetas */
+mat-label {
+  font-weight: bold; /* Define a fonte em negrito para as etiquetas */
+  color: #333;       /* Define a cor do texto da etiqueta */
+}
+
+/* Estilo para os ícones */
+mat-icon {
+  font-size: 20px;   /* Define o tamanho da fonte para os ícones */
+  color: #666;       /* Define a cor dos ícones */
+  cursor: pointer;   /* Define um estilo de cursor ao passar o mouse sobre os ícones */
+  margin-left: 5px;  /* Adiciona espaçamento à esquerda dos ícones */
+}
+
+/* Estilo para mensagens de erro */
+mat-error {
+  color: #ff0000; /* Define a cor do texto da mensagem de erro */
+  font-size: 14px; /* Define o tamanho da fonte da mensagem de erro */
+}
+
+/* Estilo para o botão */
+button {
+  background-color: #007BFF; /* Define a cor de fundo do botão */
+  color: #fff;               /* Define a cor do texto do botão */
+  padding: 10px 20px;        /* Adiciona espaçamento interno ao botão */
+  border: none;              /* Remove a borda do botão */
+  border-radius: 5px;        /* Adiciona bordas arredondadas ao botão */
+  font-size: 16px;           /* Define o tamanho da fonte do botão */
+  cursor: pointer;           /* Define um estilo de cursor ao passar o mouse sobre o botão */
+}
+
+button:disabled {
+  background-color: #ccc; /* Define a cor de fundo do botão desabilitado */
+  cursor: not-allowed;    /* Define um estilo de cursor para botão desabilitado */
+}
