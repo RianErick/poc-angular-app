@@ -3,8 +3,8 @@
   height: 100vh;
   padding: 0;
   margin: 0;
-  background: rgb(204,189,244);
-  background: linear-gradient(104deg, rgba(204,189,244,0.7847732843137255) 4%, rgba(117,147,149,1) 91%);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75,75,101,1) 35%, rgba(0,212,255,1) 100%);
   display: flex;
   align-items: center;
   justify-content: center;

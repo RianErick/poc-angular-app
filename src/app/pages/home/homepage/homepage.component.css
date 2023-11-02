@@ -1,0 +1,22 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75,75,101,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+table {
+  width: 100%;
+}
+.toobar{
+  color: #000000;
+}
+
+.card{
+  padding: 30px;
+  width: 100vw;
+}
+
