@@ -13,6 +13,8 @@ Este projeto é uma Prova de Conceito (POC) que ilustra a construção de um apl
 - **Boas Práticas**: O backend é desenvolvido seguindo as melhores práticas do Spring Boot, incluindo a estruturação do projeto, validação de entrada, tratamento de exceções e muito mais.
 
 - **Angular**: A interface do usuário é construída com Angular, aproveitando a estrutura de componentes para criar uma experiência de usuário moderna.
+  
+![home](src/assets/home.png)
 
 ## Configuração
 
