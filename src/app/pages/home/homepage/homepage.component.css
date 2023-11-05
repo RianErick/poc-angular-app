@@ -30,3 +30,13 @@ table {
   flex-direction: row;
   gap: 10px;
 }
+.ms-1{
+  color: #fff;
+  gap: 5px 5px;
+  padding: 5px 5px;
+}
+
+.fs-4{
+  padding: 5px 5px;
+}
+

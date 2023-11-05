@@ -1,7 +1,7 @@
 .gradient-custom-2 {
   /* fallback for old browsers */
   background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 6%, rgba(40,142,225,1) 36%, rgba(45,95,253,0.8267900910364145) 66%);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 6%, rgba(40,142,225,1) 36%, rgba(45,95,253,0.8267900910364145) 66%);
   }
 
   @media (min-width: 768px) {
