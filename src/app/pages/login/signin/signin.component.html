@@ -1,20 +1,58 @@
-<div class="container">
-  <form class="container-form">
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input formControlName="email" type="email" id="email" placeholder="Email" required>
+<section class="h-100 gradient-form" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
+
+                <div class="text-center">
+                  <img src="/assets/book.png"
+                    style="width: 185px;" alt="logo">
+                  <h4 class="mt-1 mb-5 pb-1">Melhor Plataforma Para Alugar Livros</h4>
+                </div>
+
+                <form>
+                  <p>Fazer Login</p>
+
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form2Example11" class="form-control"
+                      placeholder="Email" />
+                    <label class="form-label" for="form2Example11">Email</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form2Example22" class="form-control" />
+                    <label class="form-label" for="form2Example22">Senha</label>
+                  </div>
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <button class="btn btn-primary btn-block fa-lg " routerLink="/home" type="button">
+                    Logar
+                    </button>
+                    <a class="text-muted" routerLink="#">Esqueceu a senha?</a>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-center pb-4">
+                    <p class="mb-0 me-2">Não possue cadastro?</p>
+                    <button type="button" class="btn btn-outline-danger" routerLink="/signup">Cadastrar-se</button>
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+              <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                <p class="small mb-0">No mundo editorial, muitas vezes, a busca por um serviço personalizado e de qualidade é uma jornada desafiadora para autores em busca de concretizar seus sonhos literários. No entanto, é possível encontrar um parceiro confiável que ofereça um atendimento diferenciado e elogiado,
+                  abordando todas as necessidades do autor. Neste contexto, apresentamos uma proposta que abraça o
+                  universo literário de forma ímpar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="form-group">
-      <label for="senha">Senha</label>
-      <input formControlName="senha" type="password" id="senha" placeholder="Senha" required>
-    </div>
-    <div class="button-confirmar">
-      <button routerLink="/home" class="button-entrar" type="submit">Entrar</button>
-    </div>
-     <div>
-      <span class="login">
-        <a routerLink="/signup">Cadastrar-se aqui</a>
-      </span>
-     </div>
-  </form>
-</div>
+  </div>
+</section>

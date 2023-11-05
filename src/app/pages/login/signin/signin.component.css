@@ -1,72 +1,17 @@
-.container{
-  width: 100vw;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75,75,101,1) 35%, rgba(0,212,255,1) 100%);
-}
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 6%, rgba(40,142,225,1) 36%, rgba(45,95,253,0.8267900910364145) 66%);
+  }
 
-.container-form{
-  display: flex;
-  color: black;
-  padding: 7em;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-  border: 2px solid #ccc;
-  background: rgb(204,189,244);
-  background: linear-gradient(104deg, rgba(204,189,244,0.7847732843137255) 4%, rgba(117,147,149,1) 91%);
-  border-radius: 10%;
-  box-shadow: 2px 2px 20px rgba(56, 56, 56, 0.602);
-
-}
-.form-group{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  color: #fff;
-  width: 250px;
-}
-
-.form-group input {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none;
-  padding: 10px;
-}
-
-.button-confirmar {
-  text-align: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.button-entrar {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button-entrar:hover {
-  background-color: #0056b3;
-}
-
-
-.login{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-a{
-  text-decoration: none;
-  color: #fff
-}
+  @media (min-width: 768px) {
+  .gradient-form {
+  height: 100vh !important;
+  }
+  }
+  @media (min-width: 769px) {
+  .gradient-custom-2 {
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  }
+  }
