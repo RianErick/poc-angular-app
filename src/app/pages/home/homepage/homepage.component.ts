@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Livro } from 'src/app/shared/model/livro';
 
 import { HomepageService } from './../../../core/services/homepage.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-homepage',
@@ -39,9 +40,27 @@ export class HomepageComponent implements OnInit {
    })
   }
 
+confirmDeleteById(row : Livro){
+  Swal.fire({
+    title: "Tem certeza que deseja deletar?",
+    showDenyButton: true,
+    confirmButtonText: "Deletar",
+    denyButtonText: `Cancelar`
+  }).then((result) => {
+    if (result.isConfirmed) {
+      this.deleteById(row);
+    }
+  });
+}
+
   deleteById(row : Livro){
     this.homepageService.deleteLivro(row).subscribe(() => {
       this.newLoad();
+      Swal.fire({
+        title: "Deletado!",
+        text: "Recurso deletado com sucesso.",
+        icon: "success"
+      });
     })
   }
 
