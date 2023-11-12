@@ -1,0 +1,16 @@
+
+
+/* Ou, se desejar aplicar isso globalmente: */
+
+body {
+  overflow: hidden;
+}
+:host {
+  overflow: hidden !important;
+}
+
+
+* You can add global styles to this file, and also import other style files */
+::-webkit-scrollbar {
+  width: 0; /* Oculta a barra de rolagem no Chrome/Safari */
+}

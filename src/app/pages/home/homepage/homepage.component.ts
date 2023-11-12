@@ -11,7 +11,7 @@ import { HomepageService } from './../../../core/services/homepage.service';
   styleUrls: ['./homepage.component.css'],
 })
 export class HomepageComponent implements OnInit {
-  displayedColumns = ['id', 'autor', 'nome'];
+  displayedColumns = ['id', 'autor', 'nome' , 'actions'];
   listBlocks: any;
   livro!: Livro;
 
@@ -37,6 +37,12 @@ export class HomepageComponent implements OnInit {
    this.dialog.afterAllClosed.subscribe(() => {
    this.newLoad()
    })
+  }
+
+  deleteById(row : Livro){
+    this.homepageService.deleteLivro(row).subscribe(() => {
+      this.newLoad();
+    })
   }
 
   private openModalSave() {
