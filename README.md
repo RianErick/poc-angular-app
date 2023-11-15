@@ -1,6 +1,6 @@
 # POC Angular App
 
-Este é um exemplo de um aplicativo Angular que demonstra a integração com o AWS Cognito para autenticação e autorização, com um backend construído em Spring Boot seguindo boas práticas.
+Este é um exemplo de um aplicativo Angular que demonstra a integração com o Keyclock para autenticação e autorização, com um backend construído em Spring Boot seguindo boas práticas.
 
 ## Descrição
 
@@ -8,7 +8,7 @@ Este projeto é uma Prova de Conceito (POC) que ilustra a construção de um apl
 
 ## Funcionalidades
 
-- **Autenticação e Autorização**: O AWS Cognito é usado para autenticar e autorizar os usuários, garantindo uma camada de segurança sólida.
+- **Autenticação e Autorização**: O Keyclock é usado para autenticar e autorizar os usuários, garantindo uma camada de segurança sólida.
 
 - **Boas Práticas**: O backend é desenvolvido seguindo as melhores práticas do Spring Boot, incluindo a estruturação do projeto, validação de entrada, tratamento de exceções e muito mais.
 
