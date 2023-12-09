@@ -20,7 +20,7 @@ export class SignupComponent implements OnInit{
     senha : ''
  }
   this.loginForm = new FormGroup({
-    usuario : new FormControl('', [Validators.required, Validators.email]),
+    usuario : new FormControl('', [Validators.required]),
     senha : new FormControl('',[Validators.required, Validators.minLength(8)]),
     email : new FormControl('', [Validators.required, Validators.email]),
   })}

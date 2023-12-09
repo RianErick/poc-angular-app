@@ -6,6 +6,8 @@ import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { HttpsRequestInterceptor, InterceptorModule } from './core/interceptor/interceptor.module';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 function initializeKeycloak(keycloak: KeycloakService) {
   return () =>
@@ -29,14 +31,17 @@ function initializeKeycloak(keycloak: KeycloakService) {
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    KeycloakAngularModule
+    KeycloakAngularModule,
+    InterceptorModule
   ],
   providers: [  {
     provide: APP_INITIALIZER,
     useFactory: initializeKeycloak,
     multi: true,
     deps: [KeycloakService]
-  }],
+  },
+  {provide: HTTP_INTERCEPTORS, useClass: HttpsRequestInterceptor, multi: true} ,
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

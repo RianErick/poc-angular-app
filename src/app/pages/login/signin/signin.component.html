@@ -8,44 +8,55 @@
               <div class="card-body p-md-5 mx-md-4">
 
                 <div class="text-center">
-                  <img src="/assets/book.png"
-                    style="width: 185px;" alt="logo">
+                  <img src="/assets/book.png" style="width: 185px;" alt="logo">
                   <h4 class="mt-1 mb-5 pb-1">Melhor plataforma para gerenciar livros</h4>
                 </div>
 
-                <form>
+                <form [formGroup]="userForm" class="form-user">
                   <p>Fazer Login</p>
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Usuario</mat-label>
+                    <input minlength="3" maxlength="255" id="usernameFiel" matInput formControlName="usuario"
+                      autocomplete="off">
+                    <mat-icon matSuffix class="material-icons-two-tone color-icon p-3">account_circle</mat-icon>
+                    <mat-error *ngIf="userForm.get('usuario')?.hasError('required')">
+                      Usuario é obrigatorio
+                    </mat-error>
+                  </mat-form-field>
 
-                  <div class="form-outline mb-4">
-                    <input type="email" id="form2Example11" class="form-control"
-                      placeholder="Email" />
-                    <label class="form-label" for="form2Example11">Usuario</label>
-                  </div>
-
-                  <div class="form-outline mb-4">
-                    <input type="password" id="form2Example22" class="form-control" />
-                    <label class="form-label" for="form2Example22">Senha</label>
-                  </div>
-
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Senha</mat-label>
+                    <input minlength="3" maxlength="255" id="passwordField" matInput formControlName="senha"
+                      autocomplete="off" type="password">
+                    <mat-icon matSuffix class="material-icons-two-tone color-icon p-3">password</mat-icon>
+                    <mat-error *ngIf="userForm.get('senha')?.hasError('required')">
+                      Senha é obrigatorio
+                    </mat-error>
+                  </mat-form-field>
                   <div class="text-center pt-1 mb-5 pb-1">
-                    <button class="btn btn-primary btn-block fa-lg " routerLink="/home" type="button">
-                    Logar
-                    </button>
+
+                    <div class="logar-b">
+                      <button mat-raised-button color="primary" style="width: 150px;" (click)="loginKeyclockContext()">Logar</button>
+                    </div>
+
                     <a class="pass-reset" routerLink="#">Esqueceu a senha?</a>
                   </div>
 
                   <div class="d-flex align-items-center justify-content-center pb-4">
                     <p class="mb-0 me-2">Não possue cadastro?</p>
-                    <button type="button" class="btn btn-outline-danger" routerLink="/signup">Cadastrar-se</button>
+                    <button type="button" class="btn btn-outline-danger" routerLink="/signup">Cadastrar-se </button>
                   </div>
 
-                </form>
+                </form >
 
               </div>
             </div>
             <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
               <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                <p class="small mb-0">No mundo editorial, muitas vezes, a busca por um serviço personalizado e de qualidade é uma jornada desafiadora para autores em busca de concretizar seus sonhos literários. No entanto, é possível encontrar um parceiro confiável que ofereça um atendimento diferenciado e elogiado,
+                <p class="small mb-0">No mundo editorial, muitas vezes, a busca por um serviço personalizado e de
+                  qualidade é uma jornada desafiadora para autores em busca de concretizar seus sonhos literários. No
+                  entanto, é possível encontrar um parceiro confiável que ofereça um atendimento diferenciado e
+                  elogiado,
                   abordando todas as necessidades do autor. Neste contexto, apresentamos uma proposta que abraça o
                   universo literário de forma ímpar.</p>
               </div>
