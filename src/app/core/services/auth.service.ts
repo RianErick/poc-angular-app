@@ -1,16 +1,7 @@
-import { JsonPipe } from '@angular/common';
-import {
-  HttpClient,
-  HttpHeaders,
-  HttpParams,
-  HttpRequest,
-  JsonpInterceptor,
-} from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { KeycloakService } from 'keycloak-angular';
-import { KeycloakLoginOptions } from 'keycloak-js';
-import { Observable, map } from 'rxjs';
 import { User } from 'src/app/shared/model/user';
 
 @Injectable({
@@ -42,7 +33,7 @@ export class AuthService {
     this.http.post<any>(this.url, body, { headers }).subscribe({
       next: (data) => {
         console.log('Resposta do loginKeycloak:', data);
-        this.router.navigate(['/home']);
+        this.router.navigate(['/home/page']);
         this.setToken(data);
       },
       error: (erro) => {

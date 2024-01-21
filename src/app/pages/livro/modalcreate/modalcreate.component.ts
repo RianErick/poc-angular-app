@@ -39,6 +39,7 @@ export class ModalcreateComponent {
       id: [this.livro.id],
       autor: [this.livro.autor, [Validators.required, Validators.min(3) , Validators.max(255)]],
       nome: [this.livro.nome, [Validators.required, Validators.min(3) , Validators.max(255)]],
+      urlCapa: [this.livro.urlCapa , [ Validators.required,Validators.min(3)]],
     });
   }
 
@@ -54,9 +55,13 @@ export class ModalcreateComponent {
     return this.livroForm.get('nome');
   }
 
+  get urlCapa (){
+    return this.livroForm.get('urlCapa')
+  }
+
   createLivro(): void {
     const row = this.livroForm.getRawValue();
-    this.livroService.createLivro(row).subscribe((data) => {
+    this.livroService.createLivro(row).subscribe(() => {
       Swal.fire({
         position: 'top-end',
         icon: 'success',

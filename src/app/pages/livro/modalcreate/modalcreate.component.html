@@ -4,9 +4,8 @@
 
     <mat-form-field class="example-full-width" appearance="outline">
       <mat-label>Autor</mat-label>
-      <input minlength="3" maxlength="255" id="autorField" matInput formControlName="autor"
-        autocomplete="off">
-      <mat-icon matSuffix class="material-icons-two-tone color-icon p-3">book</mat-icon>
+      <input minlength="3" maxlength="255" id="autorField" matInput formControlName="autor" autocomplete="off">
+      <mat-icon matSuffix class="material-icons-two-tone color-icon p-3">person_book</mat-icon>
       <mat-error *ngIf="livroForm.get('autor')?.hasError('required')">
         Autor é obrigatorio
       </mat-error>
@@ -14,11 +13,21 @@
 
     <mat-form-field class="example-full-width" appearance="outline">
       <mat-label>Nome</mat-label>
-      <input minlength="3" maxlength="255" id="nomeField" matInput formControlName="nome"
-        autocomplete="off">
+      <input minlength="3" maxlength="255" id="nomeField" matInput formControlName="nome" autocomplete="off">
       <mat-icon matSuffix class="material-icons-two-tone color-icon p-3">book</mat-icon>
       <mat-error *ngIf="livroForm.get('nome')?.hasError('required')">
         Nome é obrigatorio
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>
+       URL
+      </mat-label>
+      <input minlength="3" id="urlCapaField" matInput formControlName="urlCapa" type="text">
+      <mat-icon matSuffix class="material-icons-two-tone color-icon p-3">link</mat-icon>
+      <mat-error *ngIf="livroForm.get('urlCapa')?.hasError('required')">
+        Url é obrigatorio
       </mat-error>
     </mat-form-field>
     <button mat-raised-button color="primary" [disabled]="!livroForm.valid" (click)="createLivro()">Salvar</button>

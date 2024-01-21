@@ -1,0 +1,47 @@
+
+.container-tool{
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+table {
+  width: 100%;
+}
+.toobar{
+  color: #000000;
+  gap:10px;
+}
+
+.card-tool{
+  width: 82vw;
+}
+
+.title{
+  padding: 20px;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.ms-1{
+  color: #fff;
+  gap: 5px 5px;
+  padding: 5px 5px;
+}
+
+.fs-4{
+  padding: 5px 5px;
+}
+
+.mat-table {
+  overflow: hidden;
+}
+
+.mat-table {
+  width: 100%;
+}

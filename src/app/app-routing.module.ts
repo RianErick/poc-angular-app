@@ -9,7 +9,16 @@ const routes: Routes = [
                                       .then((router) => router.LoginModule)},
 
   {path: 'home', loadChildren: () => import("./pages/home/home.module")
-                                      .then((router) => router.HomeModule)}
+                                      .then((router) => router.HomeModule)},
+
+  {path: 'livro', loadChildren: () => import("./pages/livro/livro.module")
+                                      .then((router) => router.LivroModule)},
+
+
+ {path: 'autor', loadChildren: () => import("./pages/autor/autor.module")
+                                      .then((router) => router.AutorModule)},
+
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
