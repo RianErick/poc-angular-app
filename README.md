@@ -14,7 +14,6 @@ Este projeto é uma Prova de Conceito (POC) que ilustra a construção de um apl
 
 - **Angular**: A interface do usuário é construída com Angular, aproveitando a estrutura de componentes para criar uma experiência de usuário moderna.
   
-![home](src/assets/home.png)
 
 ## Configuração
 
